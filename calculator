@@ -1,0 +1,64 @@
+package javaAssignments,
+import java.util.Scanner;
+class Calculatorclass {
+private double first no;
+private double second_no;
+public void getFirstNo(){
+System.out.printin("Enter the first number");
+Scanner in=new Scanner(System.in);
+first no=in.nextDouble();
+}
+public void getSecondNo(){
+System.out.println("Enter the second number");
+Scanner in=new Scanner(System.in);
+second_no=in.nextDouble();
+}
+public double addition(){
+return (first_no+second_no);
+}
+public double subtract(){
+return (first no-second_no);
+}
+public double multiply(){
+return(first_no*second_no);
+}
+public double division(){
+return (first_no/second_no);
+}
+public int factorial(int n){ 
+int fact=1;
+for(int i=1;i<=n;i++)
+fact=fact*i;
+return fact;
+}
+}
+public class Main{
+public static void main(String[] args) /
+Calculatorclass obj=new Calculatorclass ();
+obj.getFirstNo();
+obj.getSecondNo();
+Scanner in=new Scanner(System.in);
+int choice;
+do{
+System.out.print/n(" 1.Addition\n 2.Substaction\n 3.Multiplication\n 4. Division\n 5. Factorial");
+System.out.println("Enter the choice");
+int ch=in.nextlnt();
+switch(ch){
+case 1: System.out.println("Result is:" + obj.addition());
+break;
+case 2: System.out.println("Result ("Result is:" + obj.substract());
+break;
+case 3: System.out.print/n ("Result is:" + obj.multiply);
+break;
+case 4: System.out.println("Result is:" + obj.division());
+break;
+case 5:
+System.out.print/n("Result is:" + obj.factorial();
+break;
+default;
+}
+System.out.println("Do U want to continue 1 or 0?");
+choice=in.nextlnt();
+}while(choice==1);
+}
+}
