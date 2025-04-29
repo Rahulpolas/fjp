@@ -1,0 +1,19 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+public class AppletClass extends Applet {
+@Override
+public void paint(Graphics g) (
+// Set the background color
+setBackground(Color.white);
+// Draw the face (circle)
+g.setColor(Color.yellow);
+g. fillOval(50, 50, 200, 200);
+// Draw the eyes
+g.setColor (Color.black);
+g. fillOval(90, 100, 30, 40); g.fillOval(180, 100, 30, 40);
+// Draw the mouth (arc)
+g.setColor(Color.red);
+g.drawArc(100, 150, 100, 50, 0, -180);
+}
+}
