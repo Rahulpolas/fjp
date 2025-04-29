@@ -7,7 +7,6 @@ num3 = c;
 Addition(double a, double b) {
 num1 = a;
 num2 = b;
-num3 = 0;
 }
 Addition() {
 num1 = num2 = num3 = 0;
@@ -21,7 +20,7 @@ return num1 + num2 + num3;
 double add(double num1, double num2) {
 return num1 + num2;
 }
-public static void main(String[] args) {
+public static void main(String args[]) {
 Addition sum1 = new Addition(10, 20, 50);
 Addition sum2 = new Addition();
 Addition sum3 = new Addition(7);
