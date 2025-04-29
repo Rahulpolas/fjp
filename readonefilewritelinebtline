@@ -1,0 +1,24 @@
+import java.io.File;
+import java.io. FileWriter;
+import java.io.FileReader;
+import java.io. lOException;
+public class FileHandling {
+public static void main(Stringl] args) throws I0Exception{
+String data = "This is the data in the output file";
+File obj = new File("myfile.txt");
+System.out.println("File Created!");
+FileWriter output = new FileWriter ("myfile.txt");
+output.write(data);
+System.out.println("Data is written to the file.");
+char] array = new char [100];
+try {
+FileReader input = new FileReader("myfile.txt");
+input.read(array);
+System.out.printin("Data in the file:");
+System.out.println(array);
+}
+catch (Exception e) {
+e.getStackTrace();
+}
+}
+}
