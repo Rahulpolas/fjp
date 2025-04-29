@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class SortListsExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Sorting a list of integers
+        ArrayList<Integer> intList = new ArrayList<>();
+        System.out.print("Enter how many integers you want to input: ");
+        int n = scanner.nextInt();
+        
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            intList.add(scanner.nextInt());
+        }
+
+        Collections.sort(intList);
+        System.out.println("Sorted list of integers: " + intList);
+
+        // Sorting a list of names (strings)
+        ArrayList<String> nameList = new ArrayList<>();
+        System.out.print("\nEnter how many names you want to input: ");
+        int m = scanner.nextInt();
+        scanner.nextLine(); // consume the leftover newline
+        
+        System.out.println("Enter " + m + " names:");
+        for (int i = 0; i < m; i++) {
+            nameList.add(scanner.nextLine());
+        }
+
+        Collections.sort(nameList);
+        System.out.println("Sorted list of names: " + nameList);
+
+        scanner.close();
+    }
+}
